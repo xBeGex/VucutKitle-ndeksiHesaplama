@@ -1,0 +1,20 @@
+isim = input("İsminizi Yazınız:")
+soyisim = input("Soyismini Yazınız:")
+yas = input("Yaşınızı Giriniz:")
+boy = float(input("Boyunuzu 'Metre' Olarak Giriniz:"))
+kilo = float(input("Kilonuzu 'Kilogram' Giriniz:"))
+vki = float(kilo/boy**2)
+print("Vücut Kitle İndeksiniz: ",vki)
+
+if vki < 18.4:
+    print(isim+" Zayıfsın!")
+elif vki > 18.5 and vki < 24.9:
+    print(isim+" Normal Kilodasın!")
+elif vki > 25 and vki < 29.9:
+    print(isim+" Fazla kilolusun!")
+elif vki > 30 and vki < 34.9:
+    print(isim+" Birinci sınıf obezsin!")
+elif vki > 35 and vki < 44.9:
+    print(isim+" İkinci sınıf şişmansın!")
+elif vki > 45:
+    print(isim+" Aşırı kilolusun!")
